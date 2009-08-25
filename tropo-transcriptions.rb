@@ -20,7 +20,7 @@ class VoxeoTranscriptions
   property :message, Text
 end
 
-get '/' do
+get '/transcriptions' do
   # Just list all the shouts
   @transcriptions = VoxeoTranscriptions.all
   erb :index
@@ -32,7 +32,7 @@ get '/transcription' do
   erb :single
 end
 
-post '/receive' do
+post '/receive_transcription' do
   logger.info env['rack.request.form_hash'].to_s
   begin 
     result = Crack::XML.parse env['rack.request.form_hash'].to_s
