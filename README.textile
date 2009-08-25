@@ -9,13 +9,13 @@ h3. Usage
 URL to use when initiating a Record request in Tropo.com:
 
 <pre>
-	<code>:transcriptionOutURI => 'http://myapp.appspot.com/receive'</code>
+	<code>:transcriptionOutURI => 'http://myapp.appspot.com/receive_transcription_'</code>
 </pre>
 
 URL to use to see all transcription result:
 
 <pre>
-	<code>http://voxeo-transcriptions.appspot.com/</code>
+	<code>http://voxeo-transcriptions.appspot.com/transcriptions</code>
 </pre>
 		
 URL to use to see a single transcription result:
