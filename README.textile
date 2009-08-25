@@ -1,0 +1,27 @@
+h1. Voxeo Transcriptions Server
+
+h2. Overview
+
+This application creates a RESTful web service for you on <a href='http://appengine.google.com'>Google AppEngine</a> for receiving the Voxeo Transcriptions from our Tropo.com Record method. We used <a href='http://code.google.com/p/appengine-jruby/'>AppEngine-JRuby</a> to create the container application for a <a href='http://sinatrarb.com'>Sinatra</a> based Web API server.
+
+h3. Usage
+
+URL to use when initiating a Record request in Tropo.com:
+
+<pre>
+	<code>:transcriptionOutURI => 'http://myapp.appspot.com/receive'</code>
+</pre>
+
+URL to use to see all transcription result:
+
+<pre>
+	<code>http://voxeo-transcriptions.appspot.com/</code>
+</pre>
+		
+URL to use to see a single transcription result:
+
+<pre>
+	<code>http://voxeo-transcriptions.appspot.com/transcription?guid=5fad8750-7316-012c-00bd-0400580fde23</code>
+</pre>
+
+
