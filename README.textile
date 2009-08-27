@@ -19,49 +19,35 @@ h2. Installation
 
 First is to install the appengine-jruby gem on your system:
 
-<pre><code>
-sudo gem install google-appengine
-</code></pre>
+<pre><code>sudo gem install google-appengine</code></pre>
 
 Then either use git to clone the tropo-transcriptions source code or download from Github:
 
-<pre><code>
-git clone git://github.com/voxeo/tropo-transcriptions.git
-</code></pre>
+<pre><code>git clone git://github.com/voxeo/tropo-transcriptions.git</code></pre>
 
 Then edit the config.ru file:
 
-<pre><code>
-mate tropo-transcriptions/config.ru
+<pre><code>mate tropo-transcriptions/config.ru
 
-Change :application => 'tropo-transcrptions' to :application => 'your-GAE-app-name'
-</code></pre>
+Change :application => 'tropo-transcrptions' to :application => 'your-GAE-app-name'</code></pre>
 
 Then, deploy:
 
-<pre><code>
-cd tropo-transcriptions/
-appcfg.rb update .
-</code></pre>
+<pre><code>cd tropo-transcriptions/
+appcfg.rb update .</code></pre>
 
 h2. Usage
 
 URL to use when initiating a Record request in Tropo.com:
 
-<pre>
-	<code>:transcriptionOutURI => 'http://myapp.appspot.com/receive_transcription'</code>
-</pre>
+<pre><code>:transcriptionOutURI => 'http://myapp.appspot.com/receive_transcription'</code></pre>
 
 URL to use to see all transcription result:
 
-<pre>
-	<code>http://voxeo-transcriptions.appspot.com/transcriptions</code>
-</pre>
+<pre><code>http://voxeo-transcriptions.appspot.com/transcriptions</code></pre>
 		
 URL to use to see a single transcription result:
 
-<pre>
-	<code>http://voxeo-transcriptions.appspot.com/transcription?guid=5fad8750-7316-012c-00bd-0400580fde23</code>
-</pre>
+<pre><code>http://voxeo-transcriptions.appspot.com/transcription?guid=5fad8750-7316-012c-00bd-0400580fde23</code></pre>
 
 
